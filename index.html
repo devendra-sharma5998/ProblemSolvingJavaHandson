@@ -8,7 +8,28 @@
     <title>Problem Solving</title>
 </head>
 <body>
-    <p>Q1. Check whether the year is Leap year or not.</p>
+
+  <p>Q1. Find the Smaller Angle</p>
+<pre>
+    
+var Minimal_Angle = (h, m) => 
+{
+  
+  let M=m*11;
+  let H=60*h;
+    if(m===0 && h===12){
+    return 0;
+  }
+
+ else if(M>H){
+    return (M-H)/2;
+    
+  }
+  else{
+    return (H-M)/2;
+  }
+};
+    <p>Q2. Check whether the year is Leap year or not.</p>
     <pre>
          
 var Check_Leap = (year) => 
@@ -26,7 +47,7 @@ return "Leap Year"  ;
  
 
     </pre>
-    <p>Q2. Perfect Number Check.</p>
+    <p>Q3. Perfect Number Check.</p>
 <pre>
      
 var Perfect_Check = (N) => 
@@ -50,7 +71,7 @@ var Perfect_Check = (N) =>
  
 
 </pre>
-<p>Q3. Reverse a Number.</p>
+<p>Q4. Reverse a Number.</p>
 <pre>
     var Reverse_Number = (N) => 
 {
@@ -63,7 +84,7 @@ var Perfect_Check = (N) =>
 return (c)
 };
 </pre>
-<p>Q4. Substring Check.</p>
+<p>Q5. Substring Check.</p>
 <pre>
     var Substring_Check = (S1, S2) => 
 {
@@ -85,26 +106,7 @@ return (c)
   }
 };
 </pre>
-<p>Q5. Find the Smaller Angle</p>
-<pre>
-    
-var Minimal_Angle = (h, m) => 
-{
-  
-  let M=m*11;
-  let H=60*h;
-    if(m===0 && h===12){
-    return 0;
-  }
 
- else if(M>H){
-    return (M-H)/2;
-    
-  }
-  else{
-    return (H-M)/2;
-  }
-};
  
 
 </pre>
